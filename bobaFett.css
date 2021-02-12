@@ -1,0 +1,294 @@
+#boba-fett {
+    background-color: #7b7a77;
+    height: 350px;
+    width: 340px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+/** Helment Base **/
+/* Helmet variables */
+:root {
+    --width: 120px;
+    --grey:  #7b7a77;
+    --white: #fefefe;
+    --black: #0b0b0b;
+    --orange: #d5a115;
+    --darkgreen: #3a4e43;
+    --green: #446654;
+    --red: #84191c;
+    --red-shade: #621922;
+    --dark-red: #621922;
+    --dark-red-shade: #37141c;
+}
+
+/* Antenna */
+#antenna-black-box {
+    z-index: 99;
+    position: absolute;
+    left: 37px;
+    top: 17px;
+    width: 0px;
+    height: 15px;
+	border-bottom: 5px solid transparent;
+	border-left: 40px solid var(--black);
+	border-right: 50px solid transparent;  
+}
+
+#antenna-bar {
+    position: absolute;
+    left: 45px;
+    top: 35px;
+    width: 7px;
+    height: 92px;
+    background-color: var(--white);
+}
+
+#antenna-box {
+    position: absolute;
+    left: 35px;
+    top: 127px;
+    width: 27px;
+    height: 55px;
+    background-color: var(--orange);
+}
+
+/* Helmet Top - Green */
+#helmet-top-left {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    background-color:var(--green);
+    border-radius: 70% 0% 0% 0%;
+    width: var(--width);
+    height: 210px;
+}
+/* Middle Green Circle */
+#helmet-top-middle {
+    position: absolute;
+    left: 95px;
+    top: 50px;
+    overflow: hidden;
+    background-color: red;
+    border-radius: 50%;
+    width: 150px;
+    height: 60px;
+    background: linear-gradient(
+        to right, 
+        var(--green) 0%, 
+        var(--green) 50%, 
+        var(--darkgreen) 50%, 
+        var(--darkgreen) 100%
+    );
+}
+
+#helmet-top-right {
+    position: absolute;
+    left: 170px;
+    top: 50px;
+    background-color:var(--darkgreen);
+    border-radius: 0% 70% 0% 0%;
+    width: var(--width);
+    height: 210px;
+}
+
+/* Helmet Bottom - Angled Green */
+#helmet-bottom {
+    position: absolute;
+    left: 50px;
+    top: 260px;
+    display: inline-flex;
+}
+
+#helmet-bottom-left {
+    border-left: 82px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 40px solid var(--green);
+}
+
+#helmet-bottom-middleLeft, #helmet-bottom-middleRight {
+    width: 38px;
+    height: 40px;
+}
+
+#helmet-bottom-middleLeft {
+    background-color: var(--green);
+}
+
+#helmet-bottom-middleRight{
+    background-color: var(--darkgreen);
+}
+
+#helmet-bottom-right {
+    border-left: 0px solid transparent;
+    border-right: 82px solid transparent;
+    border-top: 40px solid var(--darkgreen);
+}
+
+/** Helment Red **/
+#red-top-left {
+    z-index: 99;
+    position: absolute;
+    left: 56.2px;
+    top: 120px;
+    width: 107.7px;
+    border-bottom: 21px solid var(--red);
+    border-left: 6px solid transparent;
+}
+
+#red-top-right {
+    z-index: 99;
+    position: absolute;
+    left: 170px;
+    top: 120px;
+    width: 107.5px;
+    border-bottom: 21px solid var(--red-shade);
+    border-right: 6px solid transparent;
+}
+
+/* Angled Eye Slits */
+#red-triangle-left {
+    z-index: 3;
+    position: absolute;
+    left: 57px;
+    top: 139.5px;
+
+    border-bottom: 25.5px solid var(--red);
+    border-right: 96px solid transparent;
+    border-top: 0px solid transparent;
+}
+
+#red-triangle-right {
+    z-index: 3;
+    position: absolute;
+    left: 187px;
+    top: 139.5px;
+
+    border-bottom: 25.5px solid var(--red-shade);
+    border-left: 96px solid transparent;
+    border-top: 0px solid transparent;
+}
+
+/* Bottom Red Triangles - L&R */
+#red-bottom-left {
+    z-index: 3;
+    position: absolute;
+    left: 52px;
+    top: 165px;
+	width: 13px;
+
+    border-bottom: 0px solid transparent;
+    border-left: 88px solid transparent;
+    border-top: 135px solid var(--red);
+}
+
+#red-bottom-right {
+    z-index: 3;
+    position: absolute;
+    left: 187px;
+    top: 165px;
+	width: 13px;
+
+    border-bottom: 0px solid transparent;
+    border-right: 88px solid transparent;
+    border-top: 135px solid var(--red-shade);
+}
+
+/* Darker Red, set as triangles behind brighter red - L&R */
+#dark-red-left { 
+    z-index: 1;
+    position: absolute;
+    left: 57px;
+    top: 141px;
+	width: 17px;
+
+    border-bottom: 0px solid transparent;
+    border-left: 96px solid transparent;
+    border-top: 159px solid var(--red-shade);
+}
+
+#dark-red-right {
+    z-index: 1;
+    position: absolute;
+    left: 170px;
+    top: 141px;
+	width: 17px;
+
+    border-bottom: 0px solid transparent;
+    border-right: 96px solid transparent;
+    border-top: 159px solid var(--dark-red-shade);
+}
+
+/* Green Elipsies to cover red triangle */
+#green-round-left {
+    z-index: 98;
+    position: absolute;
+    left: 52px;
+    top: 165.4px;
+
+    height: 134.5px;
+    width: 88px;
+    background-color: var(--green);
+    border-radius: 1% 100% 0% 100% / 0% 99% 0% 100%;
+}
+
+#green-round-right {
+    z-index: 98;
+    position: absolute;
+    left: 200px;
+    top: 165.4px;
+
+    height: 134.5px;
+    width: 88px;
+    background-color: var(--darkgreen);
+    border-radius: 1% 100% 0% 100% / 0% 99% 0% 100%;
+    transform: scaleX(-1);
+}
+
+/* Red Angles to fill out Edge Green near eye slits */
+#red-angle-cover-left {
+    position: absolute;
+    top: 144px;
+    left: 53.5px;
+    background-color: var(--red);
+    height: 25px;
+    width: 50px;
+    transform: rotate(9deg);
+    border-radius: 2% 100% 0% 0% / 50% 0% 0% 50%;
+}
+
+#red-angle-cover-right {
+    position: absolute;
+    top: 125px;
+    left: 235px;
+    background-color: var(--red-shade);
+    height: 45px;
+    width: 50px;
+    transform: rotate(-9deg);
+    border-radius: 100% 8% 0% 0% / 0% 100% 0% 0%;
+    /* border-radius: 100% 20% 0% 0% / 0% 50% 50% 0% ; */
+}
+
+/* Grey Cover to cover green elipsies....fml */
+#grey-cover-left {
+    z-index: 99;
+    position: absolute;
+    left: 50px;
+    top: 260px;
+
+    border-left: 0px solid transparent;
+    border-right: 82px solid transparent;
+    border-bottom: 40px solid var(--grey);
+}
+
+#grey-cover-right {
+    z-index: 99;
+    position: absolute;
+    left: 208px;
+    top: 260px;
+
+    border-left: 82px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 40px solid var(--grey);
+}
